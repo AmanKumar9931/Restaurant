@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--connect style css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Order</title>
+</head>
+<body>
+    <div id="header">
+        <nav id="navbar">
+            <h1>Resturant</h1>
+            <ul>
+                <li><a href="Restaurant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="phone">
+                <a href="tel:+919006288550">+919006288550</a>
+            </div>
+        </nav>
+        </div>
+        </body>
+        </html>
+    <div id="order">
+        
+        <h1>Order Your Meal</h1>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="food">Select Food Item:</label>
+            <select id="food" required>
+                <option value="">--Choose an item--</option>
+                <option value="select">select</option>
+                <option value="spl veg Thali">spl Veg Thali</option>
+                <option value="Burger">Burger</option>
+                <option value="chicken Tikka">Chicken Tikka</option>
+                <option value="Dosa">Dosa</option>
+                <option value="Vada">Vada</option>
+                <option value="Aloo paratha">Aloo paratha</option>
+                <option value="Idli">Idli</option>
+                <option value="soya chunks">soya chunks</option>
+                <option value="Nort-Indian Thali">North-indian Thali</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div id="orderSummary" class="hidden">
+            <h2>Order Summary</h2>
+            <p id="summaryText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
